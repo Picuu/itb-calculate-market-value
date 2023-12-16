@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbe2f086-805b-49a7-af13-2bdf2c7d2d03" name="Changes" comment="refactor: send Scanner via parameter in getFloat() function">
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+    <list default="true" id="fbe2f086-805b-49a7-af13-2bdf2c7d2d03" name="Changes" comment="fix infinite loop when wrong parameter was passed in getFloat() function">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +86,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702686068213</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix infinite loop when wrong parameter was passed in getFloat() function">
+      <option name="closed" value="true" />
+      <created>1702686293358</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702686293358</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -94,6 +102,7 @@
     <MESSAGE value="refactor: improve variables names in Main.kt" />
     <MESSAGE value="feat: create getFloat() function" />
     <MESSAGE value="refactor: send Scanner via parameter in getFloat() function" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: send Scanner via parameter in getFloat() function" />
+    <MESSAGE value="fix infinite loop when wrong parameter was passed in getFloat() function" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix infinite loop when wrong parameter was passed in getFloat() function" />
   </component>
 </project>
