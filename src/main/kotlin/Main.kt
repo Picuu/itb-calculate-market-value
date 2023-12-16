@@ -23,19 +23,19 @@ fun calculatePrice (purchasePrice:Float, km:Float):Float {
 fun getFloat(msg:String, scanner:Scanner):Float {
     print(msg)
 
-    var inputOk:Boolean = false
+    var inputFloat:Boolean
     var float:Float = 0f
     do {
-        if (scanner.hasNextFloat()) {
-            inputOk = true
+        inputFloat = scanner.hasNextFloat()
+
+        if (inputFloat) {
             float = scanner.nextFloat()
             scanner.nextLine()
-        } else if (scanner.hasNextInt()) {
-            inputOk = true
-            float = scanner.nextInt().toFloat()
-            scanner.nextLine()
-        } else println("Escriba un número válido!")
-    } while (!inputOk)
+        } else {
+            scanner.next()
+            println("Escriba un número válido!")
+        }
+    } while (!inputFloat)
 
     return float
 }
