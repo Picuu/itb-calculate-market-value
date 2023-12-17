@@ -4,9 +4,18 @@ import java.util.Scanner
 
 fun main () {
     val scanner:Scanner = Scanner(System.`in`)
-    println("Calcule el precio de su coche usado.")
+    println("CALCULE EL PRECIO DE SU COCHE USADO")
+    println("Escoja su modelo (escriba un número):")
 
-    val purchasePrice:Float = getFloat("Escriba el precio de mercado del vehículo: ", scanner)
+    val cars:Array<String> = arrayOf("Volkswagen Grand California", "Volkswagen Camper Full Equip")
+    val prices:FloatArray = floatArrayOf(73490f, 93490f)
+    for (i in cars.indices) {
+        println("${i+1} - ${cars[i]}")
+    }
+
+    val userOption:Int = getInt("", scanner) // TODO: Add max and min value to getInt() function
+    val purchasePrice:Float = getCarPrice(userOption, prices)
+
     val km:Float = getFloat("Escriba los kilómetros que tiene su coche: ", scanner)
     val finalPrice:Float = calculatePrice(purchasePrice, km)
 
