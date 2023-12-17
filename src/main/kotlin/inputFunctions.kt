@@ -1,4 +1,4 @@
-import java.util.*
+import java.util.Scanner
 
 fun getInt(msg:String, scanner: Scanner):Int {
     print(msg)
