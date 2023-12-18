@@ -21,10 +21,3 @@ fun main () {
 
     println("\nEl precio actual de su coche es de $finalPrice€")
 }
-
-fun calculatePrice (purchasePrice:Float, km:Float):Float {
-    val carWear = 0.00001f * km
-    val wearPrice = carWear * purchasePrice
-
-    return purchasePrice - wearPrice
-}
