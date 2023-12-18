@@ -1,6 +1,6 @@
 import java.util.Scanner
 
-fun getInt(msg:String, scanner: Scanner):Int {
+fun getInt(msg:String, min:Int, max:Int, scanner: Scanner):Int {
     print(msg)
 
     var inputOk:Boolean
@@ -10,6 +10,12 @@ fun getInt(msg:String, scanner: Scanner):Int {
 
         if (inputOk) {
             int = scanner.nextInt()
+
+            if (int !in min..max) {
+                inputOk = false
+                println("Escriba un número dentro del rango entre $min y $max!")
+            }
+
             scanner.nextLine()
         } else {
             scanner.next()

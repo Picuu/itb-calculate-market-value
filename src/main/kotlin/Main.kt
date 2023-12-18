@@ -13,7 +13,7 @@ fun main () {
         println("${i+1} - ${cars[i]}")
     }
 
-    val userOption:Int = getInt("", scanner) // TODO: Add max and min value to getInt() function
+    val userOption:Int = getInt("", 1, cars.size, scanner) // TODO: Add max and min value to getInt() function
     val purchasePrice:Float = getCarPrice(userOption, prices)
 
     val km:Float = getFloat("Escriba los kilómetros que tiene su coche: ", scanner)
