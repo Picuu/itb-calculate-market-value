@@ -1,7 +1,5 @@
 import java.util.Scanner
 
-// Ulises Castell y Carlos Capó
-
 fun main () {
     val scanner:Scanner = Scanner(System.`in`)
     println("CALCULE EL PRECIO DE SU COCHE USADO")
