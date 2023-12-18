@@ -11,11 +11,13 @@ fun main () {
         println("${i+1} - ${cars[i]}")
     }
 
-    val userOption:Int = getInt("", 1, cars.size, scanner)
+    val userOption:Int = getInt("",1, cars.size, scanner)
     val purchasePrice:Float = getCarPrice(userOption, prices)
 
-    val km:Float = getFloat("Escriba los kilómetros que tiene su coche: ", scanner)
-    val finalPrice:Float = calculatePrice(purchasePrice, km)
+    val km:Int = getInt("Escriba los kilómetros que tiene su coche: ", 0, 2000000, scanner)
+    val wheelsKm:Int = getInt("Escriba los kilómetros que tienen sus neumáticos: ", 0, 1000000, scanner)
+    val finalPrice:Float = calculatePrice(purchasePrice, km, wheelsKm)
 
-    println("\nEl precio actual de su coche es de $finalPrice€")
+    println("\nEl precio de compra de su ${cars[userOption-1]} fue de $purchasePrice€\nActualmente, su coche vale $finalPrice€")
 }
+
