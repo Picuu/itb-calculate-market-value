@@ -5,13 +5,10 @@ fun main () {
     println("CALCULE EL PRECIO DE SU COCHE USADO")
     println("Escoja su modelo (escriba un número):")
 
-    val cars:Array<String> = arrayOf("Volkswagen Grand California", "Volkswagen Camper Full Equip")
+    val cars:Array<String> = arrayOf("Volkswagen Grand California", "Volkswagen Grand California Camper Full Equip")
     val prices:FloatArray = floatArrayOf(73490f, 93490f)
-    for (i in cars.indices) {
-        println("${i+1} - ${cars[i]}")
-    }
 
-    val userOption:Int = getInt("",1, cars.size, scanner)
+    val userOption:Int = getCarType(cars, scanner)
     val purchasePrice:Float = getCarPrice(userOption, prices)
 
     val km:Int = getInt("Escriba los kilómetros que tiene su coche: ", 0, 2000000, scanner)
@@ -21,3 +18,10 @@ fun main () {
     println("\nEl precio de compra de su ${cars[userOption-1]} fue de $purchasePrice€\nActualmente, su coche vale $finalPrice€")
 }
 
+fun getCarType(cars:Array<String>, scanner:Scanner):Int {
+    for (i in cars.indices) {
+        println("${i+1} - ${cars[i]}")
+    }
+
+    return getInt("",1, cars.size, scanner)
+}
