@@ -87,3 +87,23 @@ fun getLong(msg:String, scanner:Scanner):Long {
 
     return long
 }
+
+fun readBoolean(msg:String, scanner:Scanner):Boolean {
+    print(msg)
+
+    var inputOk:Boolean
+    var boolean:Boolean = false
+    do {
+        inputOk = scanner.hasNextBoolean()
+
+        if (inputOk) {
+            boolean = scanner.nextBoolean()
+            scanner.nextLine()
+        } else {
+            scanner.next()
+            println("Escriba un boolean válido!")
+        }
+    } while (!inputOk)
+
+    return boolean
+}
