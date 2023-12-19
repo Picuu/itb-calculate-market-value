@@ -1,5 +1,5 @@
-fun getCarPrice(option:Int, prices:FloatArray): Float {
-    return prices[option - 1]
+fun getCarPrice(option:Int, array:FloatArray): Float {
+    return array[option - 1]
 }
 
 fun calculatePrice(purchasePrice:Float, km:Int, years:Int, wheelsKm:Int, hasBikeRack: Boolean): Float {
