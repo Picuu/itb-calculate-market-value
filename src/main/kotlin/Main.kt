@@ -18,6 +18,12 @@ fun main () {
     println(YELLOW_BOLD_BRIGHT + "\nEl precio de compra de su $CYAN${cars[userOption-1]}$YELLOW_BOLD_BRIGHT fue de $GREEN_BRIGHT$purchasePrice€$YELLOW_BOLD_BRIGHT\nActualmente, su coche vale $GREEN_BRIGHT$finalPrice€" + RESET)
 }
 
+/**
+ * This method can be used to get a string of an ASCII art of a car
+ * @author picuu
+ * @since 19/12/2023
+ * @return String ASCII art of the car
+ */
 fun getASCIICar():String {
     return "         _______" + "\n" +
             "        //  ||\\ \\" + "\n" +
@@ -27,6 +33,14 @@ fun getASCIICar():String {
             "____\\_/________\\_/______"
 }
 
+/**
+ * This method can be used to read an Int value from the user through keyboard using java.util.Scanner with a min value
+ * @author picuu
+ * @since 19/12/2023
+ * @param cars Strings Array of the cars to be shown to the user
+ * @return Int Integer given by the user on readInt() function
+ * @see readInt()
+ */
 fun getCarType(cars:Array<String>):Int {
     for (i in cars.indices) {
         println(PURPLE + "${i+1} - ${cars[i]}" + RESET)
