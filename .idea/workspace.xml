@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbe2f086-805b-49a7-af13-2bdf2c7d2d03" name="Changes" comment="refactor: make calculatePrice() more modular">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/consoleColors.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/VWfunctions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/VWfunctions.kt" afterDir="false" />
+    <list default="true" id="fbe2f086-805b-49a7-af13-2bdf2c7d2d03" name="Changes" comment="refactor: change input functions name from getX() to readX()">
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/inputFunctions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/inputFunctions.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +152,31 @@
       <option name="project" value="LOCAL" />
       <updated>1702970844168</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="refactor: make calculatePrice() more modular">
+      <option name="closed" value="true" />
+      <created>1702972635091</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1702972635091</updated>
+    </task>
+    <task id="LOCAL-00012" summary="refactor: change input functions name from getX() to readX()">
+      <option name="closed" value="true" />
+      <created>1702972797916</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702972797916</updated>
+    </task>
+    <task id="LOCAL-00013" summary="refactor: change input functions name from getX() to readX()">
+      <option name="closed" value="true" />
+      <created>1702972980265</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1702972980265</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -168,6 +191,7 @@
     <MESSAGE value="create function getCarType" />
     <MESSAGE value="feat: add hasBikeRack parameter to calculatePrice(), and add readBoolean() function" />
     <MESSAGE value="refactor: make calculatePrice() more modular" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: make calculatePrice() more modular" />
+    <MESSAGE value="refactor: change input functions name from getX() to readX()" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: change input functions name from getX() to readX()" />
   </component>
 </project>
