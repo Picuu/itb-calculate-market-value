@@ -8,8 +8,8 @@ fun main () {
     val userOption:Int = getCarType(cars)
     val purchasePrice:Float = getCarPrice(userOption, prices)
 
-    val km:Int = readInt("Escriba los kilómetros que tiene su coche: ", 0, 2000000)
-    val wheelsKm:Int = readInt("Escriba los kilómetros que tienen sus neumáticos: ", 0, 1000000)
+    val km:Int = readInt("Escriba los kilómetros que tiene su coche: ", 0)
+    val wheelsKm:Int = readInt("Escriba los kilómetros que tienen sus neumáticos: ", 0)
     val hasBikeRack:Boolean = readBoolean("Indique si su coche dispone de portabicicletas (true/false): ")
     val finalPrice:Float = calculatePrice(purchasePrice, km, wheelsKm, hasBikeRack)
 

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbe2f086-805b-49a7-af13-2bdf2c7d2d03" name="Changes" comment="refactor: change input functions name from getX() to readX()">
+    <list default="true" id="fbe2f086-805b-49a7-af13-2bdf2c7d2d03" name="Changes" comment="refactor: remove scanner as parameter from input functions">
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/inputFunctions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/inputFunctions.kt" afterDir="false" />
     </list>
@@ -176,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702972980265</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="refactor: remove scanner as parameter from input functions">
+      <option name="closed" value="true" />
+      <created>1702973139129</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1702973139129</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -192,6 +200,7 @@
     <MESSAGE value="feat: add hasBikeRack parameter to calculatePrice(), and add readBoolean() function" />
     <MESSAGE value="refactor: make calculatePrice() more modular" />
     <MESSAGE value="refactor: change input functions name from getX() to readX()" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: change input functions name from getX() to readX()" />
+    <MESSAGE value="refactor: remove scanner as parameter from input functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: remove scanner as parameter from input functions" />
   </component>
 </project>

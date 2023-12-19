@@ -2,6 +2,52 @@ import java.util.Scanner
 
 val scanner:Scanner = Scanner(System.`in`)
 
+fun readInt(msg:String):Int {
+    print(msg)
+
+    var inputOk:Boolean
+    var int:Int = 0
+    do {
+        inputOk = scanner.hasNextInt()
+
+        if (inputOk) {
+            int = scanner.nextInt()
+            scanner.nextLine()
+        } else {
+            scanner.next()
+            println("Escriba un número válido!")
+        }
+    } while (!inputOk)
+
+    return int
+}
+
+fun readInt(msg:String, min:Int):Int {
+    print(msg)
+
+    var inputOk:Boolean
+    var int:Int = 0
+    do {
+        inputOk = scanner.hasNextInt()
+
+        if (inputOk) {
+            int = scanner.nextInt()
+
+            if (int < min) {
+                inputOk = false
+                println("Valor demasiado pequeño!")
+            }
+
+            scanner.nextLine()
+        } else {
+            scanner.next()
+            println("Escriba un número válido!")
+        }
+    } while (!inputOk)
+
+    return int
+}
+
 fun readInt(msg:String, min:Int, max:Int):Int {
     print(msg)
 
