@@ -1,17 +1,29 @@
-fun getCarPrice(option:Int, prices:FloatArray):Float {
+fun getCarPrice(option:Int, prices:FloatArray): Float {
     return prices[option - 1]
 }
 
-fun calculatePrice (purchasePrice:Float, km:Int, wheelsKm:Int, hasBikeRack: Boolean):Float {
+fun calculatePrice(purchasePrice:Float, km:Int, wheelsKm:Int, hasBikeRack: Boolean): Float {
+    val wearDevaluation:Float = calculateWearDevaluation(purchasePrice, km)
+
+    val wheelsDevaluation:Int = calculateWheelsDevaluation(wheelsKm)
+
+    val bikeRicePrice:Int = calculateBikeRackPrice(hasBikeRack)
+
+    return purchasePrice - wearDevaluation - wheelsDevaluation + bikeRicePrice
+}
+
+fun calculateWearDevaluation(initialPrice:Float, km:Int): Float {
     val carWear = 0.00001f * km
-    val wearPrice = carWear * purchasePrice
+    return carWear * initialPrice
+}
 
-    var finalPrice:Float = purchasePrice - wearPrice
+fun calculateWheelsDevaluation(wheelsKm: Int): Int {
+    if (wheelsKm < 5000) return 0
+    if (wheelsKm < 10000) return 200
+    return 300
+}
 
-    if (wheelsKm < 5000) finalPrice = finalPrice
-    if (wheelsKm < 10000) finalPrice -= 200
-    else finalPrice -= 300
-
-    if (hasBikeRack) return finalPrice + 250
-    return finalPrice
+fun calculateBikeRackPrice(hasBikeRack: Boolean): Int {
+    if (hasBikeRack) return 250
+    return 0
 }
