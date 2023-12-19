@@ -8,10 +8,10 @@ fun main () {
     val userOption:Int = getCarType(cars)
     val purchasePrice:Float = getCarPrice(userOption, prices)
 
-    val years:Int = readInt("Cuántos años tiene su coche? ", 0)
-    val km:Int = readInt("Escriba los kilómetros que tiene su coche: ", 0)
-    val wheelsKm:Int = readInt("Escriba los kilómetros que tienen sus neumáticos: ", 0)
-    val hasBikeRack:Boolean = readBoolean("Indique si su coche dispone de portabicicletas (true/false): ")
+    val years:Int = readInt("Cuántos años tiene su coche? ", "Tipo de dato incorrecto!", "Valor demasiado pequeño!", 0)
+    val km:Int = readInt("Escriba los kilómetros que tiene su coche: ", "Tipo de dato incorrecto!","Valor demasiado pequeño!", 0)
+    val wheelsKm:Int = readInt("Escriba los kilómetros que tienen sus neumáticos: ", "Tipo de dato incorrecto!","Valor demasiado pequeño!", 0)
+    val hasBikeRack:Boolean = readBoolean("Indique si su coche dispone de portabicicletas (true/false): ", "Tipo de dato incorrecto!")
     val finalPrice:Float = calculatePrice(purchasePrice, km, years, wheelsKm, hasBikeRack)
 
     println("\nEl precio de compra de su ${cars[userOption-1]} fue de $purchasePrice€\nActualmente, su coche vale $finalPrice€")
@@ -22,5 +22,5 @@ fun getCarType(cars:Array<String>):Int {
         println("${i+1} - ${cars[i]}")
     }
 
-    return readInt("",1, cars.size)
+    return readInt("", "Tipo de dato incorrecto!", "Valor fuera del rango!",1, cars.size)
 }
