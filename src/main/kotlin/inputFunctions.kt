@@ -1,6 +1,6 @@
 import java.util.Scanner
 
-fun getInt(msg:String, min:Int, max:Int, scanner: Scanner):Int {
+fun readInt(msg:String, min:Int, max:Int, scanner: Scanner):Int {
     print(msg)
 
     var inputOk:Boolean
@@ -27,7 +27,7 @@ fun getInt(msg:String, min:Int, max:Int, scanner: Scanner):Int {
 }
 
 
-fun getFloat(msg:String, scanner:Scanner):Float {
+fun readFloat(msg:String, scanner:Scanner):Float {
     print(msg)
 
     var inputOk:Boolean
@@ -48,7 +48,7 @@ fun getFloat(msg:String, scanner:Scanner):Float {
 }
 
 
-fun getDouble(msg:String, scanner:Scanner):Double {
+fun readDouble(msg:String, scanner:Scanner):Double {
     print(msg)
 
     var inputOk:Boolean
@@ -68,7 +68,7 @@ fun getDouble(msg:String, scanner:Scanner):Double {
     return double
 }
 
-fun getLong(msg:String, scanner:Scanner):Long {
+fun readLong(msg:String, scanner:Scanner):Long {
     print(msg)
 
     var inputOk:Boolean
