@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbe2f086-805b-49a7-af13-2bdf2c7d2d03" name="Changes" comment="refactor: remove scanner as parameter from input functions">
+    <list default="true" id="fbe2f086-805b-49a7-af13-2bdf2c7d2d03" name="Changes" comment="    feat: make readInt() usable with min and max parameters or not">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/inputFunctions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/inputFunctions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/VWfunctions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/VWfunctions.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702973139129</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="    feat: make readInt() usable with min and max parameters or not">
+      <option name="closed" value="true" />
+      <created>1702973566023</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1702973566023</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -201,6 +210,7 @@
     <MESSAGE value="refactor: make calculatePrice() more modular" />
     <MESSAGE value="refactor: change input functions name from getX() to readX()" />
     <MESSAGE value="refactor: remove scanner as parameter from input functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: remove scanner as parameter from input functions" />
+    <MESSAGE value="    feat: make readInt() usable with min and max parameters or not" />
+    <option name="LAST_COMMIT_MESSAGE" value="    feat: make readInt() usable with min and max parameters or not" />
   </component>
 </project>
