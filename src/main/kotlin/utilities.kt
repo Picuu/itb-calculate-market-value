@@ -187,7 +187,8 @@ fun readInt(pMessageIn: String
 
 /**
  * This method can be used to read an Int value from the user through keyboard using java.util.Scanner with a min value
- * @author raimon.izard picuu
+ * @author raimon.izard
+ * @author picuu
  * @since 19/12/2023
  * @param pMessageIn Input message to be shown to the user
  * @param pMessageErrorDT Data type error message to be shown to the user
