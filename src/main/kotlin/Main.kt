@@ -11,8 +11,8 @@ fun main () {
     val userOption:Int = getCarType(cars, scanner)
     val purchasePrice:Float = getCarPrice(userOption, prices)
 
-    val km:Int = getInt("Escriba los kilómetros que tiene su coche: ", 0, 2000000, scanner)
-    val wheelsKm:Int = getInt("Escriba los kilómetros que tienen sus neumáticos: ", 0, 1000000, scanner)
+    val km:Int = readInt("Escriba los kilómetros que tiene su coche: ", 0, 2000000, scanner)
+    val wheelsKm:Int = readInt("Escriba los kilómetros que tienen sus neumáticos: ", 0, 1000000, scanner)
     val hasBikeRack:Boolean = readBoolean("Indique si su coche dispone de portabicicletas (true/false): ", scanner)
     val finalPrice:Float = calculatePrice(purchasePrice, km, wheelsKm, hasBikeRack)
 
@@ -24,5 +24,5 @@ fun getCarType(cars:Array<String>, scanner:Scanner):Int {
         println("${i+1} - ${cars[i]}")
     }
 
-    return getInt("",1, cars.size, scanner)
+    return readInt("",1, cars.size, scanner)
 }
