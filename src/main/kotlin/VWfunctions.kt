@@ -38,9 +38,10 @@ fun calculatePrice(purchasePrice:Float, km:Int, years:Int, wheelsKm:Int, hasBike
  * This method can be used to calculate how much value the car loses based on its years and kilometers
  * @author picuu
  * @since 19/12/2023
- * @param initialPrice
- * @param km Integer of the kilometers that the car has
- * @param years Integer of the years that the car has
+ * @param initialPrice Base price with which the devaluation will be calculated
+ * @param km Integer of the kilometers the car has
+ * @param years Integer of the years the car has
+ * @return Float of the amount of euros the car loses
  */
 fun calculateWearDevaluation(initialPrice:Float, km:Int, years: Int = 0): Float {
     var devaluation:Float = 0.00001f
@@ -51,12 +52,22 @@ fun calculateWearDevaluation(initialPrice:Float, km:Int, years: Int = 0): Float 
     return carWear * initialPrice
 }
 
+/**
+ * This method can be used to calculate how much value the car loses based on its wheels kilometers
+ * @param wheelsKm Integer of the kilometers the wheels have
+ * @return Integer of the price the car loses
+ */
 fun calculateWheelsDevaluation(wheelsKm: Int): Int {
     if (wheelsKm < 5000) return 0
     if (wheelsKm < 10000) return 200
     return 300
 }
 
+/**
+ * This method can be used to calculate the value (€) a car gets if it has bicycle rack
+ * @param hasBikeRack Boolean that says whether or not the car has a bicycle rack
+ * @return The price the car gets if it has bicycle rack
+ */
 fun calculateBikeRackPrice(hasBikeRack: Boolean): Int {
     if (hasBikeRack) return 250
     return 0
