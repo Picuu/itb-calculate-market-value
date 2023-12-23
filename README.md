@@ -45,6 +45,9 @@ Modular Kotlin project to calculate a car price based on some conditions.
 
 ## 🚀 Execution
 
+> [!CAUTION]
+> To execute the application, you have to use the **Amazon Corretto 20 SDK**.
+
 This is an example of the code execution:
 ![image](https://github.com/Picuu/itb-calculate-market-value/assets/93738423/d792cb91-d553-4725-a5f4-7e5119812767)
 
